@@ -16,6 +16,11 @@
         <testsuite name="default">
             <directory>tests</directory>
         </testsuite>
+        <testsuite name="money">
+            <file>tests/IntlFormatterTest.php</file>
+            <file>tests/MoneyTest.php</file>
+            <file>tests/CurrencyTest.php</file>
+        </testsuite>
     </testsuites>
 
     <coverage cacheDirectory=".phpunit.cache/code-coverage"
