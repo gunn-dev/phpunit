@@ -16,4 +16,19 @@ final class DatabaseTest extends TestCase
     {
         self::$dbh = null;
     }
+
+    protected function setUp(): void
+    {
+        if (!extension_loaded('mysqli')) {
+            $this->markTestSkipped(
+              'The MySQLi extension is not available.'
+            );
+        }
+    }
+
+    public function testConnection(): void
+    {
+        $this->assertTrue(true);
+        // ...
+    }
 }
