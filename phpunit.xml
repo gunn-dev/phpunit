@@ -11,7 +11,9 @@
          convertDeprecationsToExceptions="true"
          failOnRisky="true"
          failOnWarning="true"
-         verbose="true">
+         verbose="true"
+         colors="true"
+         testdox="true">
     <testsuites>
         <testsuite name="default">
             <directory>tests</directory>
@@ -21,12 +23,24 @@
             <file>tests/MoneyTest.php</file>
             <file>tests/CurrencyTest.php</file>
         </testsuite>
+        <testsuite name="appendix">
+            <directory>tests/appendix</directory>
+        </testsuite>
     </testsuites>
 
     <coverage cacheDirectory=".phpunit.cache/code-coverage"
               processUncoveredFiles="true">
         <include>
             <directory suffix=".php">tests</directory>
+            <file>tests/CurrencyTest.php</file>
         </include>
     </coverage>
+    <logging>
+        <junit outputFile="covers/junit.xml"/>
+        <teamcity outputFile="covers/teamcity.txt"/>
+        <testdoxHtml outputFile="covers/testdox.html"/>
+        <testdoxText outputFile="covers/testdox.txt"/>
+        <testdoxXml outputFile="covers/testdox.xml"/>
+        <text outputFile="covers/logfile.txt"/>
+    </logging>
 </phpunit>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tests>
+  <test className="ArrayHasKeyTest" methodName="testFailure" prettifiedClassName="Array Has Key" prettifiedMethodName="Failure" status="0" time="0.010751361" size="-1" groups="default">
+    <group name="default"/>
+    <covers target="HayKey"/>
+  </test>
+  <test className="ArrayHasKeyTest" methodName="testFailure2" prettifiedClassName="Array Has Key" prettifiedMethodName="Failure" status="0" time="0.001726211" size="-1" groups="default">
+    <group name="default"/>
+    <covers target="HayKey"/>
+  </test>
+  <test className="ArrayHasKeyTest" methodName="testAttribute" prettifiedClassName="Array Has Key" prettifiedMethodName="Attribute" status="0" time="0.001954113" size="-1" groups="default">
+    <group name="default"/>
+    <covers target="HayKey"/>
+  </test>
+  <test className="ArrayHasKeyTest" methodName="testWithDelta" prettifiedClassName="Array Has Key" prettifiedMethodName="With delta" status="0" time="0.000867418" size="-1" groups="default">
+    <group name="default"/>
+    <covers target="HayKey"/>
+  </test>
+</tests>
